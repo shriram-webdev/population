@@ -56,7 +56,8 @@ function displayMatches() {
     }).join('');
     suggestions.innerHTML = html;
   } else {
-    suggestions.innerHTML = ''; // Clear suggestions when input is empty
+    suggestions.innerHTML = `<li>Filter for a city</li>
+      <li>or a state</li>`; 
   }
 }
 
